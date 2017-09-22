@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
-import styles from 'assets/styles/style.css'
+import styles from 'assets/styles/style.scss'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import banner from 'views/banner';
+import hr from 'views/hr-view';
+import presentational from 'views/presentation-view';
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className={styles.app}>
-        <div className={styles.header} >
-          <img src={logo} className={styles.logo}  alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className={styles.intro} >
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={banner}/>
+                    <Route path="/hr-view" component={hr}/>
+                    <Route path="/presentational-view" component={presentational}/>
+                </Switch>
+            </Router>
+        );
+    }
 }
 
 export default App;
