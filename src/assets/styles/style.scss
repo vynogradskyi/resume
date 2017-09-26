@@ -1,24 +1,56 @@
-.app {
-    text-align: center;
+@import "./reset.min.css";
+@import '../fonts/fonts.css';
+@import "variables";
+@import "utils";
+@import "mixins";
+
+body{
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: $break-xxs;
+  letter-spacing: 0 !important;
 }
 
-.logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
+h1, h2, h3, h4, h5 {
+  font-family: $font-serif;
 }
 
-.header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
+p, a {
+  font-family: $font-sans-serif;
+  font-size: 20px;
 }
 
-.intro {
-    font-size: large;
+h1 {
+  font-size: 90px;
 }
 
-@keyframes App-logo-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+h2 {
+  font-size: 70px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 44px;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+.container{
+  width: 100%;
+}
+
+.content-container{
+  width: 84%;
+  margin: 0 8%;
+
+  @include media-xs{
+    width: 100%;
+  }
 }

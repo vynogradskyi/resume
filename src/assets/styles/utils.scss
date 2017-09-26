@@ -1,0 +1,29 @@
+@import "variables";
+.text-black{
+  color: $black;
+}
+
+.text-dark-grey{
+  color: $dark-grey;
+}
+
+.text-grey{
+  color: $dark-grey;
+}
+
+.text-italic{
+  font-style: italic;
+}
+
+.text-thin{
+  font-weight: 300;
+}
+
+a.save-decoration{
+  text-decoration: underline!important;;
+}
+
+a:visited, a:link, a {
+  color: $black;
+  text-decoration: none
+}

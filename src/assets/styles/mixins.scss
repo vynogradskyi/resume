@@ -1,0 +1,28 @@
+@import "variables.scss";
+
+
+@mixin media-lg{
+  @media only screen and (max-width: #{$break-lg}) {
+    @content;
+  }
+}
+@mixin media-md{
+  @media only screen and (max-width: #{$break-md}) {
+    @content;
+  }
+}
+@mixin media-sm{
+  @media only screen and (max-width: #{$break-sm}) {
+    @content;
+  }
+}
+@mixin media-xs{
+  @media only screen and (max-width: #{$break-xs}) {
+    @content;
+  }
+}
+@mixin media-xxs{
+  @media only screen and (max-width: #{$break-xxs}) {
+    @content;
+  }
+}
