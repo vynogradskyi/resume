@@ -3,6 +3,7 @@
 @import "variables";
 @import "utils";
 @import "mixins";
+@import "icons";
 
 body{
   height: 100%;
@@ -17,29 +18,29 @@ h1, h2, h3, h4, h5 {
   font-family: $font-serif;
 }
 
-p, a {
+p, a, span {
   font-family: $font-sans-serif;
-  font-size: 20px;
+  font-size: 1vw;
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 5.2vw;
 }
 
 h2 {
-  font-size: 70px;
+  font-size: 4.1vw;
 }
 
 h3 {
-  font-size: 56px;
+  font-size: 3vw;
 }
 
 h4 {
-  font-size: 44px;
+  font-size: 1.9vw;
 }
 
 h5 {
-  font-size: 32px;
+  font-size: 1.5vw;
 }
 
 .container{
@@ -47,10 +48,12 @@ h5 {
 }
 
 .content-container{
-  width: 84%;
-  margin: 0 8%;
+  width: 60%;
+  margin: 0 20%;
 
   @include media-xs{
     width: 100%;
   }
 }
+
+

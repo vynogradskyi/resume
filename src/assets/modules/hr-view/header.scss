@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  hr {
+    height: 1px;
+    width: 100%;
+    background-color: $grey;
+    margin-bottom: $section-space;
+  }
+}
+
+.personal-info-item {
+  color: $dark-grey;
+
+  span, a {
+    margin-left: 20px;
+    margin-bottom: 7px;
+    color: $dark-grey;
+    display: inline-block;
+  }
+}
+
+
+.address{
+  @extend .personal-info-item;
+}
+
+.email{
+  @extend .personal-info-item;
+}
+
+.phone{
+  @extend .personal-info-item;
+}
+
+.title {
+  margin-top: 40px;
+  margin-bottom: $section-space;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+.position {
+  text-transform: uppercase;
+  color: $dark-grey;
+  letter-spacing: 0.1em;
+}

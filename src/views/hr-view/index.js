@@ -1,5 +1,6 @@
 import React from 'react';
+import ResumeDocView from './hr-view';
 
 export default () => {
-    return <div>HR View</div>
+    return <ResumeDocView/>
 }

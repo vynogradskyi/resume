@@ -1,0 +1,25 @@
+@import "../font-awesome/font-awesome.scss";
+
+.base-icon{
+  @extend .fa;
+  @extend .fa-lg;
+}
+
+.icon-email{
+  @extend .base-icon;
+  @extend .fa-envelope-o;
+}
+
+.icon-phone{
+  @extend .base-icon;
+  @extend .fa-phone;
+}
+
+.icon-address{
+  @extend .base-icon;
+  @extend .fa-address-book-o;
+}
+
+.icon-circle{
+  @extend .base-icon;
+}
