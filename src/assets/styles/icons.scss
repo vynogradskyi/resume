@@ -1,4 +1,5 @@
 @import "../font-awesome/font-awesome.scss";
+@import "variables";
 
 .base-icon{
   @extend .fa;
@@ -22,4 +23,8 @@
 
 .icon-circle{
   @extend .base-icon;
+  @extend .fa-circle;
+  font-size: 1vh;
+  vertical-align: middle;
+  margin-right: 2vh;
 }

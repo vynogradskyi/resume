@@ -14,11 +14,11 @@ export default {
     sections: {
         aboutMe: {
             title: 'ABOUT ME',
-            text: 'Hello, I’m Valentyn. It’s really hard to pronounce, so you can use Val, Valentin or Valek. ' +
-            'I’m a straight open person. Really goal focused, even too much, because work sometimes it’s hard to see the border between life and work. ' +
-            'I’m trying to split them though. When I work - I work. When I’m not - I’m not. I have strong experience in front end development and programming itself. ' +
-            'I started my career as a back-end developer, and some time ago moved to a front-end, because was charmed by flexibility and transparency of the JavaScript. ' +
-            'But you always have to pay. So am I. But time spent on learning for being up to date really worth it. This is my CV. Hope you enjoy it!'
+            text: `Hello, I’m Valentyn. It’s really hard to pronounce, so you can use Val, Valentin or Valek. My current place of living is Wroclaw, but my home city - Kharkiv, Ukraine.
+                    I’m a straight open person. Really goal focused. Have a strong experience in front end development and programming itself. I have started my career as a back-end developer,
+                     and some time ago moved to a front-end, because was charmed by flexibility and transparency of the JavaScript. But you always have to pay. In this case currency is time 
+                     for self-education. So am I. But the time spent on learning for being up to date really worth it. I like playing football, rock climbing, computer gaming.This is my CV.
+                      Hope you enjoy!`
         },
         experience: [
             {
@@ -125,12 +125,37 @@ export default {
         social: {
             title: 'Social Media',
             points: [
-                'linkedin / vynogradskyi',
-                'skype / valek19891',
-                'facebook / vynogradskyi',
-                'twitter / vynogradskyi',
-                'email / vinogradskiy.v.a@gmail.com',
-                'instagram / vynogradskyi',
+                {
+                    site: 'linkedin',
+                    value: 'vynogradskyi',
+                    url: 'https://www.linkedin.com/in/vynogradskyi/'
+
+                },
+                {
+                    site: 'skype',
+                    value: 'valek19891',
+                    url: ''
+                },
+                {
+                    site: 'facebook',
+                    value: 'vynogradskyi',
+                    url: ''
+                },
+                {
+                    site: 'twitter',
+                    value: 'vynogradskyi',
+                    url: ''
+                },
+                {
+                    site: 'email',
+                    value: 'vinogradskiy.v.a@gmail.com',
+                    url: ''
+                },
+                {
+                    site: 'instagram',
+                    value: 'vynogradskyi',
+                    url: ''
+                }
             ]
         },
         education: {

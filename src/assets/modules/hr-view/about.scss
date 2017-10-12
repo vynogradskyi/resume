@@ -1,16 +1,14 @@
+@import "../../styles/variables";
 
 .about {
-
-  h4 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
+  margin-bottom: $section-space;
 }
 
 .title {
-
+  text-align: center;
+  margin-bottom: $section-header-space;
 }
 
 .text {
-
+  line-height: $line-height;
 }

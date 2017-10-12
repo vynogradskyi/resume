@@ -11,7 +11,7 @@ export default () => {
             </div>
 
             <div className={styles.address}>
-                <i className="icon-address"/> <span>{`${cv.address.zip} / ${cv.address.city}, ${cv.address.country} / ${cv.address.street}`}</span>
+                <i className="icon-address"/> <span>{`${cv.address.zip}, ${cv.address.city}, ${cv.address.country}, ${cv.address.street}`}</span>
             </div>
             <div className={styles.phone}>
                 <i className="icon-phone" /> <span>{cv.telephone}</span>

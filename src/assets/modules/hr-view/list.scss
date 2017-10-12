@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.title{
+  text-transform: uppercase;
+  margin-bottom: $section-header-space;
+}
+
+.list{
+  li {
+    margin-left: $point-left-shift;
+    line-height: $point-line-height;
+  }
+
+  margin-bottom: $section-space;
+}
+
