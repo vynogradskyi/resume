@@ -1,22 +1,16 @@
 import React from 'react';
+import styles from 'css-modules/hr-view/titled-list.scss';
 
-import styles from 'css-modules/hr-view/list.scss';
+//components
+import Ul from './ul';
 
-export default function ({list, customPointRenderer}) {
+
+export default function ({list, type}) {
 
     return (
         <div className={styles.list}>
             <h4 className={styles.title}>{list.title}</h4>
-            <ul>
-                {
-                    list.points.map(customPointRenderer || pointRenderer)
-                }
-            </ul>
+            <Ul points={list.points} type={type} />
         </div>
     );
 }
-
-
-const pointRenderer = point => {
-    return (<li> <i className="icon-circle"/> {point}</li>);
-};

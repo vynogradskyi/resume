@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.li{
+  //li{
+  //  margin-left: $point-left-shift;
+  //  line-height: $point-line-height;
+  //  display: flex;
+  //  flex-direction: row;
+  //  margin-bottom: 1vh;
+  //
+  //  span{
+  //    display: block;
+  //  }
+  //}
+
+  list-style: disc inside;
+  text-indent: -25px;
+  padding-left: 1em;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}

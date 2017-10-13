@@ -11,17 +11,20 @@ import CvSections from './components/cv-sections';
 
 export default (props) => {
     return (
-        <div className={classnames(styles.hr, 'content-container')}>
-            <header>
+        <div >
+            <header className="content-container">
                 <CvHeader {...props}/>
             </header>
-            <div>
+            <div  className="content-container">
                 <CvAbout {...props}/>
                 <div className={styles.cols}>
                     <CvSections {...props}/>
                     <CvWorkExperience {...props} />
                 </div>
             </div>
+            <footer className={styles.footer}>
+                <p>The End</p>
+            </footer>
 
         </div>
     )

@@ -1,7 +1,13 @@
+@import "../../styles/variables";
 .experience{
   flex: 3 1 60%;
 
   display: flex;
   flex-direction:column;
   flex-wrap: nowrap;
+  margin-left: 30px;
+}
+
+.title{
+  margin-bottom: $section-space;
 }

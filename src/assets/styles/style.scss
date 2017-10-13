@@ -20,27 +20,32 @@ h1, h2, h3, h4, h5 {
 
 p, a, span, li {
   font-family: $font-sans-serif;
-  font-size: 1vw;
+  font-size: 18px;
 }
 
 h1 {
-  font-size: 5.2vw;
+  font-size: 90px;
+  line-height: 90px;
 }
 
 h2 {
-  font-size: 4.1vw;
+  font-size: 72px;
+  line-height: 72px;
 }
 
 h3 {
-  font-size: 3vw;
+  font-size: 60px;
+  line-height: 60px;
 }
 
 h4 {
-  font-size: 1.9vw;
+  font-size: 42px;
+  line-height: 42px;
 }
 
 h5 {
-  font-size: 1.5vw;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .container{

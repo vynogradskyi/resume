@@ -24,7 +24,9 @@
 .icon-circle{
   @extend .base-icon;
   @extend .fa-circle;
+
   font-size: 1vh;
   vertical-align: middle;
   margin-right: 2vh;
+  margin-top: 1.5vh;
 }

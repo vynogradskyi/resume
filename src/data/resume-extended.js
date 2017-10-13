@@ -26,11 +26,15 @@ export default {
                 company: 'Data-Art',
                 date: 'since Aug 2015',
                 city: 'Wroclaw',
-                description: `Was hired as a fullstask developer, but after half a year was requalified to pure front-end developer. And I like it! Projects:`,
+                description: 'I joined Data Art as a full stack developer, and switched to a full front-end development after 9 month. ' +
+                'With a strong programming skills i was able to quickly dive into Js best practices and write clean and smart code, with a continous refactoring. ' +
+                'First part of my DataArt work i spent as full stask developer, i was planning, estimating, developing new features, doing bug fix, deploy and investigating environment issues. ' +
+                'Now i\'m working as a Senior Front-End Developer for a client with a number of projects, old and new one, i\'m resposible for development, ' +
+                'estimating new projects, mentoring some junior developers, reviewing other team members code, and involved in feature/sprint plannings, candidate interviewing. Projects:',
                 points: [
                     'Logistics portal with infinite number of different features. (Asp MVC 4, MS SQL, Javascript, jQuery)',
-                    'Art portal: admin view for users. (React+Redux, ES6, Webpack)',
-                    'Art portal: ArtFair site. (React, React-Router v4, CRA)',
+                    'Art portal: admin view for users. (React+Redux with server rendering, thunk. ES6, Web pack + Gulp), development',
+                    'Art portal: dedicated art fair web page. (React, React-Router v4, CRA), development',
                     'Art portal: bug fix on a number of other projects'
                 ]
             },
@@ -39,11 +43,11 @@ export default {
                 company: 'SMT Software',
                 date: 'Jan 2014 - Aug 2015',
                 city: 'Wroclaw',
-                description: 'I was working for a Credit Suisse as a contractor. Leading full stack development of the unauthorized trading control system.' +
-                ' The tech: Angular.js, .Net (Web Api), MS SQL, MS SSRS, Console app, Dapper. Projects:',
+                description: 'I was working for a Credit Suisse as a contractor. There were some number of projects i was involved into, but most of time i was working on two of them. ' +
+                'The technology stack was quite random: Angular.js, .Net (Web Api), MS SQL, MS SSRS, Console app, Dapper. And a lot of internal tools of Credit Suisse. Projects:',
                 points: [
-                    'Report system. Tech:  DB + SSRS + C#',
-                    'Unauthorized trading control system. (Estimates, Architecture, Development, Leading, Planning)'
+                    'Console application for gathering and parsing bank info and put it into DB + SSRS number of different reports (Maintenance and new report creation)',
+                    'Web Api + Angular FE, another gather, parse display application, but created by our team from the scratch. (Architecture, Development, Leading, Planning, back and front end both)'
                 ]
             },
             {
@@ -51,14 +55,14 @@ export default {
                 company: 'Dev-Pro',
                 date: 'Nov 2012 - Jan 2014',
                 city: 'Kharkiv',
-                description: `At Dev-Pro i used to work on the Search/Cache system for custom mobile clients of the MS Dynamics CRM. Really challenging project with high
-                code quality requirements. Was responsible for:`,
+                description: 'I was hired to Dev-Pro for a paticular project. It was a Search/Cach system for company that was configuring Microsoft Dynamic CRM for other clients. ' +
+                'We were aimed to reduce the response time for mobile users doing big system based on ElasticSearch, RabbitMQ and CouchDB. Most of time i was working on a back-end side. ' +
+                'As a developer i was involved in some number of tasks:',
                 points: [
                     'New feature development / estimate',
                     'Bug fix / deploy / code review / environment issue',
                     'Front end side (there was a health notification admin web site)',
                     'Also i was responsible for a good mood in our room',
-                    'Dialogue with client'
                 ]
             },
             {
@@ -67,6 +71,7 @@ export default {
                 date: 'Mar 2011 - Nov 2012',
                 city: 'Kharkiv',
                 description: 'As a junior developer i was most of time overseen by more experienced developers and was working on internal projects most of time. ' +
+                'I was involved in a "senior" task though: planning, architecture, estimates, coding, code reviewing, refactoring and development being only one developer on the project. ' +
                 'There were multiple project i was working on, during time spent in Intetics:',
                 points: [
                     'Internal HR portal, for resource management. (FE, BE)',
@@ -129,28 +134,27 @@ export default {
                 {
                     site: 'skype',
                     value: 'valek19891',
-                    nohref: true
+                    url: ''
                 },
                 {
                     site: 'facebook',
                     value: 'vynogradskyi',
-                    url: 'https://www.facebook.com/vynogradskyi'
+                    url: ''
                 },
                 {
                     site: 'twitter',
                     value: 'vynogradskyi',
-                    url: 'https://twitter.com/vynogradskyi'
+                    url: ''
                 },
                 {
                     site: 'email',
                     value: 'vinogradskiy.v.a@gmail.com',
-                    url: 'mailto:vinogradskiy.v.a@gmail.com',
-                    noTarget: true
+                    url: ''
                 },
                 {
                     site: 'instagram',
                     value: 'vynogradskyi',
-                    url: 'https://www.instagram.com/vynogradskyi/'
+                    url: ''
                 }
             ]
         },
