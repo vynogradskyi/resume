@@ -21,31 +21,54 @@ h1, h2, h3, h4, h5 {
 p, a, span, li {
   font-family: $font-sans-serif;
   font-size: 18px;
+  @include media-md{
+    font-size: 12px;
+  }
 }
 
 h1 {
   font-size: 90px;
   line-height: 90px;
+  @include media-md{
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 h2 {
   font-size: 72px;
   line-height: 72px;
+  @include media-md{
+    font-size: 52px;
+    line-height: 52px;
+  }
 }
 
 h3 {
   font-size: 60px;
   line-height: 60px;
+  @include media-md{
+    font-size: 44px;
+    line-height: 44px;
+  }
 }
 
 h4 {
   font-size: 42px;
   line-height: 42px;
+  @include media-md{
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 h5 {
   font-size: 24px;
   line-height: 30px;
+  @include media-md{
+    font-size: 28px;
+    line-height: 28px;
+  }
 }
 
 .container{

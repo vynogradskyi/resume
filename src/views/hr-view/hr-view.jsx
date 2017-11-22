@@ -15,7 +15,7 @@ export default (props) => {
             <header className="content-container">
                 <CvHeader {...props}/>
             </header>
-            <div  className="content-container">
+            <div  className="content-container ">
                 <CvAbout {...props}/>
                 <div className={styles.cols}>
                     <CvSections {...props}/>

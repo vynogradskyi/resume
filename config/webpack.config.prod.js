@@ -78,7 +78,7 @@ module.exports = {
         // We placed these paths second because we want `node_modules` to "win"
         // if there are any conflicts. This matches Node resolution mechanism.
         // https://github.com/facebookincubator/create-react-app/issues/253
-        modules: ['node_modules', paths.appNodeModules].concat(
+        modules: ['node_modules', paths.appNodeModules, 'src'].concat(
             // It is guaranteed to exist because we tweak it in `env.js`
             process.env.NODE_PATH.split(path.delimiter).filter(Boolean)
         ),
@@ -94,6 +94,7 @@ module.exports = {
             // Support React Native Web
             // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
             'react-native': 'react-native-web',
+            'css-modules': paths.cssModules
         },
         plugins: [
             // Prevents users from importing files from outside of src/ (or node_modules/).
@@ -166,7 +167,8 @@ module.exports = {
                     // use the "style" loader inside the async code so CSS from them won't be
                     // in the main CSS file.
                     {
-                        test: /\.css$/,
+                        test: /\.scss$/,
+                        include:[paths.cssModules],
                         loader: ExtractTextPlugin.extract(
                             Object.assign(
                                 {
@@ -178,6 +180,7 @@ module.exports = {
                                                 importLoaders: 1,
                                                 minimize: true,
                                                 modules: true,
+                                                localIdentName: "[name]__[local]__[hash:base64:5]",
                                                 sourceMap: shouldUseSourceMap,
                                             },
                                         },
@@ -201,6 +204,50 @@ module.exports = {
                                                 ],
                                             },
                                         },
+                                        require.resolve('sass-loader')
+                                    ],
+                                },
+                                extractTextPluginOptions
+                            )
+                        ),
+                        // Note: this won't work without `new ExtractTextPlugin()` in `plugins`.
+                    },
+                    {
+                        test: /\.scss$/,
+                        loader: ExtractTextPlugin.extract(
+                            Object.assign(
+                                {
+                                    fallback: require.resolve('style-loader'),
+                                    use: [
+                                        {
+                                            loader: require.resolve('css-loader'),
+                                            options: {
+                                                importLoaders: 1,
+                                                minimize: true,
+                                                sourceMap: shouldUseSourceMap,
+                                            },
+                                        },
+                                        {
+                                            loader: require.resolve('postcss-loader'),
+                                            options: {
+                                                // Necessary for external CSS imports to work
+                                                // https://github.com/facebookincubator/create-react-app/issues/2677
+                                                ident: 'postcss',
+                                                plugins: () => [
+                                                    require('postcss-flexbugs-fixes'),
+                                                    autoprefixer({
+                                                        browsers: [
+                                                            '>1%',
+                                                            'last 4 versions',
+                                                            'Firefox ESR',
+                                                            'not ie < 9', // React doesn't support IE8 anyway
+                                                        ],
+                                                        flexbox: 'no-2009',
+                                                    }),
+                                                ],
+                                            },
+                                        },
+                                        require.resolve('sass-loader')
                                     ],
                                 },
                                 extractTextPluginOptions

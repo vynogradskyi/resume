@@ -151,6 +151,11 @@ export default {
                     site: 'instagram',
                     value: 'vynogradskyi',
                     url: 'https://www.instagram.com/vynogradskyi/'
+                },
+                {
+                    site: 'github',
+                    value: 'vynogradskyi',
+                    url: 'https://github.com/vynogradskyi'
                 }
             ]
         },
@@ -166,7 +171,7 @@ export default {
             points: [
                 'football',
                 'programming',
-                'table tannis',
+                'table tennis',
                 'package tours'
             ]
         }
