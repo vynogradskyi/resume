@@ -1,4 +1,5 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 .experience{
   flex: 3 1 60%;
 
@@ -6,6 +7,9 @@
   flex-direction:column;
   flex-wrap: nowrap;
   margin-left: 30px;
+  @include media-sm{
+    margin-left: 0;
+  }
 }
 
 .title{

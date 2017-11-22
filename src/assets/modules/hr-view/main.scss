@@ -1,9 +1,14 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .cols {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+
+  @include media-sm{
+    flex-direction: column;
+  }
 }
 
 .footer {

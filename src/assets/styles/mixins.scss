@@ -26,3 +26,16 @@
     @content;
   }
 }
+
+@mixin with-default-sizes($lg, $md, $sm){
+  font-size: $lg;
+  line-height: $lg;
+  @include media-md{
+    font-size: $md;
+    line-height: $md;
+  }
+  @include media-sm{
+    font-size: $sm;
+    line-height: $sm;
+  }
+}

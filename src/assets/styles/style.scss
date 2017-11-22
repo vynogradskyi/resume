@@ -24,51 +24,29 @@ p, a, span, li {
   @include media-md{
     font-size: 12px;
   }
+  @include media-sm{
+    font-size: 11px;
+  }
 }
 
 h1 {
-  font-size: 90px;
-  line-height: 90px;
-  @include media-md{
-    font-size: 60px;
-    line-height: 60px;
-  }
+  @include with-default-sizes(90px, 60px, 38px);
 }
 
 h2 {
-  font-size: 72px;
-  line-height: 72px;
-  @include media-md{
-    font-size: 52px;
-    line-height: 52px;
-  }
+  @include with-default-sizes(72px, 52px, 36px);
 }
 
 h3 {
-  font-size: 60px;
-  line-height: 60px;
-  @include media-md{
-    font-size: 44px;
-    line-height: 44px;
-  }
+  @include with-default-sizes(60px, 44px, 34px);
 }
 
 h4 {
-  font-size: 42px;
-  line-height: 42px;
-  @include media-md{
-    font-size: 36px;
-    line-height: 36px;
-  }
+  @include with-default-sizes(42px, 36px, 32px);
 }
 
 h5 {
-  font-size: 24px;
-  line-height: 30px;
-  @include media-md{
-    font-size: 28px;
-    line-height: 28px;
-  }
+  @include with-default-sizes(30px, 28px, 26px);
 }
 
 .container{
@@ -78,9 +56,12 @@ h5 {
 .content-container{
   width: 60%;
   margin: 0 20%;
+  box-sizing: border-box;
 
-  @include media-xs{
+  @include media-sm{
     width: 100%;
+    margin: 0;
+    padding: 0 5px;
   }
 }
 

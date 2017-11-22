@@ -1,4 +1,6 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
+
 .banner{
   display: flex;
   flex-direction: column;
@@ -17,6 +19,9 @@
 .nav{
   display: flex;
   justify-content: space-between;
+  @include media-sm{
+    padding: 0 20px;
+  }
 }
 .navItem{
 }
