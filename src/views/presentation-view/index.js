@@ -1,5 +1,6 @@
 import React from 'react';
+import Svg from './svg';
 
 export default () => {
-    return <div>Presentational view</div>
+    return <Svg />
 }
