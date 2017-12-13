@@ -49,6 +49,22 @@ h5 {
   @include with-default-sizes(30px, 28px, 26px);
 }
 
+.svg-elm{
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.svg-elm.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
 .container{
   width: 100%;
 }

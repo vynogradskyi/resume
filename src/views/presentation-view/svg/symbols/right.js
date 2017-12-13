@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ({w, h, t, type}) {
     return (
-        <symbol id="right" data-name="right" viewBox="0 0 85.17 86.62">
+        <symbol id="right" data-name="right" viewBox="0 0 85.17 86.62" className="left-foot">
             <g id="svg_8" data-name="svg 8">
                 <path id="svg_1" data-name="svg 1"
                       d="M25.37,28.42c-2.23-5.23.16-15.9-1.57-22.26-1.68-6.19-9.17-9.71-19-.67-11,10.1-.5,43,7.08,53.57s13.58,14.83,27,13.57c7.09-.66,15.88-5.09,20.45-12,6.9-10.5-1.45-31.3-14.24-26.28C45.1,34.28,30.58,40.64,25.37,28.42Z"/>

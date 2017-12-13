@@ -1,7 +1,8 @@
 import React from 'react';
+import classnames from 'classnames'
 
-export default function ({w, h, t}) {
+export default function ({w, h, t, show}) {
     return (
-        <use width={w} height={h} transform={t} xlinkHref="#point" />
+        <use className={classnames('point','svg-elm', show && 'show')} width={w} height={h} transform={t} xlinkHref="#point" />
     );
 }
